@@ -16,3 +16,5 @@ let nums = [1, 2, , 4];
 nums[99] = 100;
 nums.lucky = true;
 for (const i in nums) console.log(`${i}: ${nums[i]}`);
+
+nums.forEach((element, key) => {console.log(`${key}: ${element}`)})

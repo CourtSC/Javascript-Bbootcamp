@@ -42,13 +42,13 @@ let count = 0;
 let sum = 0;
 arr = [1, 2, 0, 3];
 for (let i = 0; i < arr.length; i++) {
-	// continue sends control here
 	console.log(`arr[i]: ${arr[i]}`);
 	if (arr[i] <= 0) continue;
 	count++;
 	console.log(`count: ${count}`);
 	sum += arr[i];
 	console.log(`sum: ${sum}`);
-}
+    // continue sends control here, skipping remainder of current iteration.
+} 
 let avg = count === 0 ? 0 : sum / count;
 console.log(`avg: ${avg}`);
