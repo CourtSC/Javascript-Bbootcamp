@@ -1,17 +1,5 @@
 // Random number generation in javascript
 
-// function that accepts the size and number of dice
-
-// function diceRoller(numDice, sizeDice) {
-// 	const min = 1;
-// 	const max = sizeDice;
-// 	const rolls = [];
-// 	for (let i = 0; i < numDice; i++) {
-// 		rolls.push(Math.floor(Math.random() * (max - min) + min));
-// 	}
-// 	return rolls;
-// }
-
 const diceRoller = (numDice, sizeDice) => {
 	const min = 1;
 	const max = sizeDice;
@@ -22,25 +10,12 @@ const diceRoller = (numDice, sizeDice) => {
 	return rolls;
 };
 
-// function statRoller() {
-//     let statRolls = []
-// 	for (let i = 0; i < 6; i++) {
-// 		const rolls = diceRoller(4, 6);
-// 		let rollTotal = 0;
-// 		for (let j = 0; j < rolls.length; j++) {
-// 			rollTotal += rolls[j];
-// 		}
-// 		rollTotal -= Math.min(...rolls);
-// 		statRolls.push(rollTotal);
-// 	}
-// 	return statRolls;
-// }
-
 const statRoller = () => {
 	let statRolls = [];
+	let statTotal = 0;
 	while (statTotal < 60) {
 		statRolls = [];
-		let statTotal = 0;
+		statTotal = 0;
 		for (let i = 0; i < 6; i++) {
 			const rolls = diceRoller(4, 6);
 			let rollTotal = 0;
