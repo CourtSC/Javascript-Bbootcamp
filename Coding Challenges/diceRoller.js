@@ -5,7 +5,7 @@ const diceRoller = (numDice, sizeDice) => {
 	const max = sizeDice;
 	let rolls = [];
 	for (let i = 0; i < numDice; i++) {
-		rolls.push(Math.floor(Math.random() * (max - min) + min));
+		rolls.push(Math.trunc(Math.random() * max) + min);
 	}
 	return rolls;
 };
