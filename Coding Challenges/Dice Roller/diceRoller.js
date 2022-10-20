@@ -13,7 +13,7 @@ const diceRoller = (numDice, sizeDice) => {
 const statRoller = () => {
 	let statRolls = [];
 	let statTotal = 0;
-	while (statTotal < 60) {
+	while (statTotal < 72) {
 		statRolls = [];
 		statTotal = 0;
 		for (let i = 0; i < 6; i++) {
